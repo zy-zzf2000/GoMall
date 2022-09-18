@@ -6,7 +6,7 @@
 
 //用于向其他微服务发送RPC的接口
 
-package order
+package orderpb
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
