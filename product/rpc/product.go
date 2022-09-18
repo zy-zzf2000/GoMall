@@ -21,6 +21,7 @@ type productserver struct {
 }
 
 //实现rpc service
+//注意参数需要传入指针类型
 func (s *productserver) Products(ctx context.Context, in *pb.ProductRequest) (*pb.ProductResponse, error) {
 	log.Println("product server received")
 	return &pb.ProductResponse{}, nil
